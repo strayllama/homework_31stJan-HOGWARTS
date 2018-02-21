@@ -31,9 +31,9 @@ attr_reader(:id, :name, :logo_url)
 
   def House.find_id(id)
     sql = "SELECT * FROM houses WHERE id = $1"
-    values = [$1]
-    house_hash = SqlRunner.run(sql, values)[0]
-    house = Student.new(house_hash)
+    values = [id]
+    house_hash = SqlRunner.run(sql, values)
+    house = House.new(house_hash.first)
     return house
   end
 
