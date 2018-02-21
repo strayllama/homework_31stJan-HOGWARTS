@@ -1,0 +1,22 @@
+<h1>ALL STUDENTS</h1>
+<p>
+  <table>
+    <thead>
+      <th>First Name</th>
+      <th>Second Name</th>
+      <th>House</th>
+      <th>Age</th>
+    </thead>
+<% @students.each do |student| %>
+    <tbody>
+      <th><%= student.first_name %></th>
+      <th><%= student.second_name %></th>
+      <th><%= student.house %></th>
+      <th><%= student.age %></th>
+    </tbody>
+<% end %>
+  </table>
+</p>
+<p>
+  <a href="#top" class="no_decoration nav_links">Go to TOP</a>
+</p>

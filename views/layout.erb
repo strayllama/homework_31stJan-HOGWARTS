@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='/reset.css'>
+  <link rel='stylesheet' href='/style.css'>
+  <title>Hogwarts Student Enrolment</title>
+</head>
+<body>
+  <header>
+  </header>
+  <nav class="inline">
+    <a id="top" class="no_decoration nav_links" href="/hogwarts-students"><img id="logo" src="/hogwarts_logo.png" alt="howarts logo"></a>
+    <ul class="no_bullets inline">
+      <li>
+        <a class="no_decoration nav_links" href="/hogwarts-students">All Students</a> |
+        <a class="no_decoration nav_links" href="/hogwarts-students/new">Add a NEW student</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="display_area">
+    <%= yield %>
+  </div>
+</body>
+</html>
