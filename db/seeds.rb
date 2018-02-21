@@ -32,49 +32,49 @@ house4.save()
 student1 = Student.new({
   "first_name" => "Harry",
   "second_name" => "Potter",
-  "house" => "Griffendor",
+  "house_id" => house1.id(),
   "age" => 13
 })
 
 student2 = Student.new({
   "first_name" => "Ron",
   "second_name" => "Ginger",
-  "house" => "Griffendor",
+  "house_id" => house1.id(),
   "age" => 13
 })
 
 student3 = Student.new({
   "first_name" => "Malfoy",
   "second_name" => "Angry",
-  "house" => "Slytherin",
+  "house_id" => house4.id(),
   "age" => 13
 })
 
 student4 = Student.new({
   "first_name" => "Hermiony",
   "second_name" => "Granger",
-  "house" => "Griffendor",
+  "house_id" => house1.id(),
   "age" => 13
 })
 
 student5 = Student.new({
   "first_name" => "Tom",
   "second_name" => "Tall",
-  "house" => "Hufflepuff",
+  "house_id" => house3.id(),
   "age" => 14
 })
 
 student6 = Student.new({
   "first_name" => "Angela",
   "second_name" => "Plughole",
-  "house" => "Ravenclaw",
+  "house_id" => house2.id(),
   "age" => 15
 })
 
 student7 = Student.new({
   "first_name" => "Stewart",
   "second_name" => "Little",
-  "house" => "Hufflepuff",
+  "house_id" => house3.id(),
   "age" => 11
 })
 

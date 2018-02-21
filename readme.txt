@@ -88,6 +88,7 @@ DONE
 Part 8
 Alter the student to have a foreign key to House instead of text
 Add a method to Student to find a house() for the student
+DONE
 
 Part 9
 Change the new student form to populate the drop down from the House table

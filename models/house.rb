@@ -34,7 +34,7 @@ attr_reader(:id, :name, :logo_url)
     values = [$1]
     house_hash = SqlRunner.run(sql, values)[0]
     house = Student.new(house_hash)
-    return student
+    return house
   end
 
   def House.delete_all()
