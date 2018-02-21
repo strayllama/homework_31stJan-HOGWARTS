@@ -22,20 +22,20 @@ attr_reader(:id, :name, :logo_url)
 
 # CLASS METHODS
 
-  # def Student.find_all()
-  #   sql = "SELECT * FROM students"
-  #   student_array = SqlRunner.run(sql)
-  #   students = student_array.map {|student_hash| Student.new(student_hash)}
-  #   return students
-  # end
-  #
-  # def Student.find_id(id)
-  #   sql = "SELECT * FROM students WHERE id = $1"
-  #   values = [$1]
-  #   student_hash = SqlRunner.run(sql, values)[0]
-  #   student = Student.new(student_hash)
-  #   return student
-  # end
+  def House.find_all()
+    sql = "SELECT * FROM houses"
+    house_array = SqlRunner.run(sql)
+    houses = house_array.map {|house_hash| House.new(house_hash)}
+    return houses
+  end
+
+  def House.find_id(id)
+    sql = "SELECT * FROM houses WHERE id = $1"
+    values = [$1]
+    house_hash = SqlRunner.run(sql, values)[0]
+    house = Student.new(house_hash)
+    return student
+  end
 
   def House.delete_all()
     sql = "DELETE FROM houses"

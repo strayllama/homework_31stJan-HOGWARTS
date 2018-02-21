@@ -68,20 +68,22 @@ hard code a drop down of house names
 
 Part 6
 A house can be one of Gryffindor, Ravenclaw, Hufflepuff, or Slytherin and should be stored in the database with:
-
-A name
-
-Optionally, a url for a logo
+  A name
+  Optionally, a url for a logo
 
 Create a table for Houses
+DONE
 
 Create a ruby model that can save() the details of a house
+DONE
 
 Seed the database
+DONE
 
 Part 7
 Add a method to House to find all houses
 Add a method to House to find a house by id
+DONE
 
 Part 8
 Alter the student to have a foreign key to House instead of text
