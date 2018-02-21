@@ -5,7 +5,7 @@ require_relative('./models/student.rb')
 require_relative('./models/house.rb')
 
 # GETS
-binding.pry
+#binding.pry
 
 get '/hogwarts-students' do
   @students = Student.find_all()
