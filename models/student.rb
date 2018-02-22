@@ -26,7 +26,7 @@ attr_reader(:id, :first_name, :second_name, :house_id, :age)
   end
 
   def house()
-    sql = "SELECT * FROM house WHERE id = $1"
+    sql = "SELECT * FROM houses WHERE id = $1"
     house_hash = SqlRunner.run(sql, [@house_id])[0]
     house = House.new(house_hash)
     return house

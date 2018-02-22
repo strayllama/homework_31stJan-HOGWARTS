@@ -11,7 +11,7 @@
     <tbody>
       <th><%= student.first_name %></th>
       <th><%= student.second_name %></th>
-      <th><%= House.find_id(student.house_id).name() %></th>
+      <th> <img id="logo" src="<%= House.find_id(student.house_id).logo_url() %>" alt="Logo for House <%= House.find_id(student.house_id).name() %>" /> </th>
       <th><%= student.age %></th>
     </tbody>
 <% end %>
