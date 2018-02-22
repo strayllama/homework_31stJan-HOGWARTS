@@ -92,4 +92,4 @@ DONE
 
 Part 9
 Change the new student form to populate the drop down from the House table
-* eeerm
+* ALL WORKING with house Logos
